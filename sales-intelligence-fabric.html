@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sales Intelligence with Microsoft Fabric Data Agents | AI Edge</title>
+  <meta name="description" content="An anonymized AI Edge case study on designing a Microsoft Fabric Data Agent foundation for next-best-action sales intelligence." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+  <a href="#main-content" class="skip-link focus-ring rounded-xl border border-slate-700 bg-slate-900 px-4 py-2 text-sm font-medium text-white">Skip to main content</a>
+
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-xl">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6">
+      <a href="index.html" class="flex items-center gap-3" aria-label="AI Edge home">
+        <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-500/10 ring-1 ring-indigo-400/30"><i data-lucide="network" class="h-6 w-6 text-indigo-400" aria-hidden="true"></i></span>
+        <span><span class="block text-lg font-bold tracking-tight text-white">AI Edge</span><span class="hidden text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500 sm:block">AI Services Arm of BECS</span></span>
+      </a>
+      <nav class="hidden items-center gap-7 text-sm font-medium text-slate-300 lg:flex" aria-label="Primary navigation">
+        <a href="services.html" class="transition hover:text-white">Services</a>
+        <a href="industries.html" class="transition hover:text-white">Industries</a>
+        <a href="engagements.html" class="transition hover:text-white">Engagements</a>
+        <a href="insights.html" class="transition hover:text-white">Insights</a>
+        <a href="about.html" class="transition hover:text-white">About</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="contact.html" class="hidden rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-500 sm:inline-flex">Book a Discovery Call</a>
+        <button id="mobile-menu-button" type="button" class="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-700 bg-slate-900 text-slate-200 hover:border-indigo-400 hover:text-white lg:hidden" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false"><i data-lucide="menu" class="h-6 w-6" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="hidden border-t border-slate-800 bg-slate-950 px-4 py-5 lg:hidden" aria-label="Mobile navigation">
+      <div class="mx-auto flex max-w-7xl flex-col gap-2">
+        <a href="services.html" class="mobile-link rounded-lg px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-900 hover:text-white">Services</a>
+        <a href="industries.html" class="mobile-link rounded-lg px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-900 hover:text-white">Industries</a>
+        <a href="engagements.html" class="mobile-link rounded-lg px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-900 hover:text-white">Engagements</a>
+        <a href="insights.html" class="mobile-link rounded-lg px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-900 hover:text-white">Insights</a>
+        <a href="about.html" class="mobile-link rounded-lg px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-900 hover:text-white">About</a>
+        <a href="contact.html" class="mobile-link mt-2 inline-flex items-center justify-center rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-500">Book a Discovery Call</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="page-shell">
+    <section class="page-hero px-4 sm:px-6">
+      <div class="mx-auto max-w-7xl">
+        <div class="glass rounded-3xl p-8 sm:p-12">
+          <p class="section-label text-xs font-bold uppercase text-indigo-400">Anonymized Case Study | Sales Intelligence</p>
+          <h1 class="mt-4 max-w-4xl text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Transforming sales intelligence with Microsoft Fabric Data Agents</h1>
+          <p class="mt-5 max-w-4xl text-lg leading-8 text-slate-300">How AI Edge helped an anonymized heavy equipment dealer establish a governed foundation for next-best-action and next-best-offer recommendations.</p>
+          <div class="mt-6 flex flex-wrap gap-3 text-xs font-semibold uppercase tracking-wider text-slate-400">
+            <span class="rounded-full border border-slate-700 bg-slate-900 px-3 py-2">Microsoft Fabric</span>
+            <span class="rounded-full border border-slate-700 bg-slate-900 px-3 py-2">Data Agents</span>
+            <span class="rounded-full border border-slate-700 bg-slate-900 px-3 py-2">Sales Intelligence</span>
+            <span class="rounded-full border border-slate-700 bg-slate-900 px-3 py-2">Governance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+        <div class="space-y-8">
+          <article class="glass page-card">
+            <div class="page-card-inner">
+              <p class="section-label text-xs font-bold uppercase text-indigo-400">Customer Challenge</p>
+              <h2 class="mt-3 text-2xl font-semibold text-white">Moving from periodic analysis to intelligent recommendations</h2>
+              <p class="mt-4 text-base leading-8 text-slate-300">The customer had already invested in predictive analytics that generated sales recommendations from a limited set of business indicators. The process remained largely manual, requiring sales leaders to review insights, coach representatives, and prioritize customer engagement through periodic analysis and reporting.</p>
+              <p class="mt-4 text-base leading-8 text-slate-400">The goal was to create a scalable AI-enabled analytics foundation that could prioritize opportunities, surface actionable insights, incorporate multiple business signals, reduce spreadsheet-driven decision-making, and support future AI-assisted sales coaching.</p>
+            </div>
+          </article>
+
+          <article class="glass page-card">
+            <div class="page-card-inner">
+              <p class="section-label text-xs font-bold uppercase text-indigo-400">AI Edge Approach</p>
+              <h2 class="mt-3 text-2xl font-semibold text-white">Business questions first, technology second</h2>
+              <div class="mt-7 grid gap-6 md:grid-cols-2">
+                <div>
+                  <p class="text-sm font-semibold text-cyan-300">01 | Business question engineering</p>
+                  <p class="mt-3 text-sm leading-7 text-slate-400">Stakeholders formalized the decisions the solution needed to support, including which customers to prioritize, which opportunities had the highest conversion probability, and what action to take next.</p>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-cyan-300">02 | Data and semantic readiness</p>
+                  <p class="mt-3 text-sm leading-7 text-slate-400">The team assessed source systems, Fabric readiness, semantic models, KPI definitions, business terminology, relationships, and security requirements.</p>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-cyan-300">03 | Fabric Data Agent design</p>
+                  <p class="mt-3 text-sm leading-7 text-slate-400">The architecture used governed enterprise data and Fabric semantic models to support role-aware, grounded, explainable recommendations using existing business logic.</p>
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-cyan-300">04 | Security and governance</p>
+                  <p class="mt-3 text-sm leading-7 text-slate-400">The access strategy covered workspaces, semantic models, source connectivity, RBAC alignment, security-trimmed responses, and Microsoft 365 integration readiness.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass page-card">
+            <div class="page-card-inner">
+              <p class="section-label text-xs font-bold uppercase text-indigo-400">Architecture Direction</p>
+              <h2 class="mt-3 text-2xl font-semibold text-white">A governed analytics layer with a path to orchestration</h2>
+              <p class="mt-4 text-base leading-8 text-slate-300">The design established a clear separation of responsibilities. Microsoft Fabric Data Agents provided the analytics layer for data access, semantic understanding, KPI interpretation, recommendation generation, and business grounding.</p>
+              <p class="mt-4 text-base leading-8 text-slate-400">Azure AI Foundry was identified as the future orchestration layer for scheduling, multi-agent coordination, workflow management, and user-specific execution. This separation created a scalable foundation while maintaining clear ownership boundaries.</p>
+            </div>
+          </article>
+        </div>
+
+        <aside class="space-y-8">
+          <div class="glass page-card">
+            <div class="page-card-inner">
+              <h2 class="text-xl font-semibold text-white">Signals considered</h2>
+              <ul class="content-list mt-5">
+                <li><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Historical purchase behavior</span></li>
+                <li><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Service history</span></li>
+                <li><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Machine telemetry</span></li>
+                <li><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Promotional participation</span></li>
+                <li><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Geographic and environmental signals</span></li>
+                <li><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Existing predictive analytics outputs</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="glass page-card">
+            <div class="page-card-inner">
+              <h2 class="text-xl font-semibold text-white">Technical capabilities</h2>
+              <ul class="content-list mt-5">
+                <li><i data-lucide="layers-3" class="mt-0.5 h-5 w-5 shrink-0 text-cyan-400" aria-hidden="true"></i><span>Fabric Data Agents</span></li>
+                <li><i data-lucide="layers-3" class="mt-0.5 h-5 w-5 shrink-0 text-cyan-400" aria-hidden="true"></i><span>Semantic model grounding</span></li>
+                <li><i data-lucide="layers-3" class="mt-0.5 h-5 w-5 shrink-0 text-cyan-400" aria-hidden="true"></i><span>Lakehouse and Warehouse connectivity</span></li>
+                <li><i data-lucide="layers-3" class="mt-0.5 h-5 w-5 shrink-0 text-cyan-400" aria-hidden="true"></i><span>Security-trimmed responses</span></li>
+                <li><i data-lucide="layers-3" class="mt-0.5 h-5 w-5 shrink-0 text-cyan-400" aria-hidden="true"></i><span>KPI-aware agent instructions</span></li>
+                <li><i data-lucide="layers-3" class="mt-0.5 h-5 w-5 shrink-0 text-cyan-400" aria-hidden="true"></i><span>Business terminology and ontology definition</span></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="mt-8 glass page-card">
+        <div class="page-card-inner">
+          <p class="section-label text-xs font-bold uppercase text-indigo-400">Expected Business Value</p>
+          <h2 class="mt-3 text-2xl font-semibold text-white">A path toward AI-assisted sales decision support</h2>
+          <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="glass-subtle rounded-xl p-5"><p class="font-semibold text-white">Improved prioritization</p><p class="mt-2 text-sm leading-6 text-slate-400">Help sales teams focus on the highest-value customer opportunities.</p></div>
+            <div class="glass-subtle rounded-xl p-5"><p class="font-semibold text-white">Faster opportunity discovery</p><p class="mt-2 text-sm leading-6 text-slate-400">Surface relevant signals and recommendations closer to the moment of action.</p></div>
+            <div class="glass-subtle rounded-xl p-5"><p class="font-semibold text-white">Less manual analysis</p><p class="mt-2 text-sm leading-6 text-slate-400">Reduce dependence on periodic reviews and spreadsheet-driven workflows.</p></div>
+            <div class="glass-subtle rounded-xl p-5"><p class="font-semibold text-white">More consistent coaching</p><p class="mt-2 text-sm leading-6 text-slate-400">Support sales leadership with a shared, governed view of customer signals.</p></div>
+            <div class="glass-subtle rounded-xl p-5"><p class="font-semibold text-white">Higher analytics adoption</p><p class="mt-2 text-sm leading-6 text-slate-400">Make enterprise analytics more accessible through natural language interaction.</p></div>
+            <div class="glass-subtle rounded-xl p-5"><p class="font-semibold text-white">Reusable AI foundation</p><p class="mt-2 text-sm leading-6 text-slate-400">Create a path toward future Copilot Studio and multi-agent experiences.</p></div>
+          </div>
+          <p class="mt-7 text-sm leading-7 text-slate-500">Benefits described here are expected outcomes from the designed capability and should not be interpreted as independently verified production results.</p>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+        <a href="contact.html" class="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-6 py-3.5 font-semibold text-white transition hover:bg-indigo-500">Discuss a similar challenge</a>
+        <a href="engagements.html" class="inline-flex items-center justify-center rounded-xl border border-slate-700 bg-slate-900 px-6 py-3.5 font-semibold text-slate-200 transition hover:border-indigo-400 hover:text-white">Back to engagements</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800/80 bg-slate-950 px-4 py-10 sm:px-6">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 text-center md:flex-row md:text-left">
+      <div>
+        <p class="font-semibold text-slate-200">AI Edge</p>
+        <p class="mt-1 text-sm text-slate-500">Enterprise AI, Microsoft Fabric & Data Modernization Consulting</p>
+      </div>
+      <div class="text-sm text-slate-500 md:text-right">
+        <p>© <span id="current-year">2026</span> AI Edge. All rights reserved.</p>
+        <p class="mt-1">A trade name of BigEdge Consulting Services Limited.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

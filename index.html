@@ -3,140 +3,1070 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Edge | Enterprise AI & Autonomous Systems</title>
+
+    <title>AIATBECS | Microsoft Fabric, Enterprise AI & Data Modernization</title>
+
+    <meta
+        name="description"
+        content="AIATBECS provides Microsoft Fabric, enterprise AI, data modernization, Power BI, AI agent, RAG, Copilot enablement, and enterprise architecture consulting."
+    >
+    <meta name="theme-color" content="#020617">
+
+    <meta property="og:title" content="AIATBECS | Enterprise AI & Data Modernization Consulting">
+    <meta
+        property="og:description"
+        content="Boutique consulting services across Microsoft Fabric, enterprise AI, data engineering, analytics modernization, AI agents, RAG, and Copilot enablement."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aiatbecs.ca/">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+
     <style>
-        .glass {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+        :root {
+            color-scheme: dark;
         }
+
+        html {
+            scroll-padding-top: 6rem;
+        }
+
+        body {
+            min-height: 100vh;
+        }
+
+        .glass {
+            background: rgba(15, 23, 42, 0.72);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(148, 163, 184, 0.14);
+        }
+
+        .glass-subtle {
+            background: rgba(255, 255, 255, 0.025);
+            border: 1px solid rgba(148, 163, 184, 0.12);
+        }
+
         .glow {
-            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.25);
+            box-shadow: 0 0 50px -12px rgba(99, 102, 241, 0.42);
+        }
+
+        .card-hover {
+            transition:
+                transform 180ms ease,
+                border-color 180ms ease,
+                background-color 180ms ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-4px);
+            border-color: rgba(99, 102, 241, 0.55);
+            background: rgba(99, 102, 241, 0.06);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #818cf8, #38bdf8, #2dd4bf);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .section-label {
+            letter-spacing: 0.14em;
+        }
+
+        .focus-ring:focus-visible,
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        select:focus-visible,
+        textarea:focus-visible {
+            outline: 3px solid rgba(129, 140, 248, 0.85);
+            outline-offset: 3px;
+        }
+
+        .skip-link {
+            position: fixed;
+            top: 0.75rem;
+            left: 0.75rem;
+            z-index: 100;
+            transform: translateY(-150%);
+            transition: transform 150ms ease;
+        }
+
+        .skip-link:focus {
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
         }
     </style>
 </head>
+
 <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
 
-    <!-- Header / Navigation -->
-    <header class="fixed top-0 w-full z-50 glass border-b border-slate-800/80">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <i data-lucide="cpu" class="w-8 h-8 text-indigo-400"></i>
-                <span class="text-xl font-bold tracking-tight bg-gradient-to-r from-white to-slate-400 bg-clip-text text-transparent">AI EDGE</span>
-            </div>
-            <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-400">
-                <a href="#services" class="hover:text-indigo-400 transition">Services</a>
-                <a href="#stack" class="hover:text-indigo-400 transition">Tech Stack</a>
-                <a href="#about" class="hover:text-indigo-400 transition">About</a>
-            </nav>
-            <a href="#contact" class="px-5 py-2.5 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-sm transition glow">
-                Book AI Discovery
+    #main-content
+        Skip to main content
+    </a>
+
+    <!-- Header -->
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-xl">
+        <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6">
+
+            #home
+                <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-500/10 ring-1 ring-indigo-400/30">
+                    <i data-lucide="network" class="h-6 w-6 text-indigo-400" aria-hidden="true"></i>
+                </span>
+
+                <span>
+                    <span class="block text-lg font-bold tracking-tight text-white">AIATBECS</span>
+                    <span class="hidden text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500 sm:block">
+                        AI, Analytics & Enterprise Consulting
+                    </span>
+                </span>
             </a>
+
+            <nav
+                class="hidden items-center gap-7 text-sm font-medium text-slate-300 lg:flex"
+                aria-label="Primary navigation"
+            >
+                #servicesServices</a>
+                #why-usWhy AIATBECS</a>
+                #engagementsEngagements</a>
+                #approachApproach</a>
+                #aboutAbout</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                #contact
+                    Book a Discovery Call
+                </a>
+
+                <button
+                    id="mobile-menu-button"
+                    type="button"
+                    class="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-700 bg-slate-900 text-slate-200 hover:border-indigo-400 hover:text-white lg:hidden"
+                    aria-label="Open navigation menu"
+                    aria-controls="mobile-menu"
+                    aria-expanded="false"
+                >
+                    <i id="menu-icon" data-lucide="menu" class="h-6 w-6" aria-hidden="true"></i>
+                </button>
+            </div>
         </div>
+
+        <nav
+            id="mobile-menu"
+            class="hidden border-t border-slate-800 bg-slate-950 px-4 py-5 lg:hidden"
+            aria-label="Mobile navigation"
+        >
+            <div class="mx-auto flex max-w-7xl flex-col gap-2">
+                #servicesServices</a>
+                #why-usWhy AIATBECS</a>
+                #engagementsEngagements</a>
+                #approachApproach</a>
+                #aboutAbout</a>
+                #contact
+                    Book a Discovery Call
+                </a>
+            </div>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="pt-40 pb-20 px-6 max-w-7xl mx-auto text-center relative">
-        <div class="absolute inset-0 -z-10 flex items-center justify-center">
-            <div class="w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-[120px]"></div>
-        </div>
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-indigo-300 text-xs font-semibold uppercase tracking-wider mb-8">
-            <i data-lucide="sparkles" class="w-4 h-4"></i> Applied AI & Enterprise Engineering
-        </div>
-        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight max-w-4xl mx-auto leading-tight">
-            Accelerate Your Enterprise with Custom <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">AI Systems</span>
-        </h1>
-        <p class="mt-6 text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-light">
-            We architect and deploy enterprise RAG agents, predictive data engines, and custom machine learning pipelines tailored for operational efficiency.
-        </p>
-        <div class="mt-10 flex justify-center gap-4">
-            <a href="#contact" class="px-8 py-4 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold transition glow flex items-center gap-2">
-                Schedule AI Consultation <i data-lucide="arrow-right" class="w-5 h-5"></i>
-            </a>
-        </div>
-    </section>
+    <main id="main-content">
 
-    <!-- Core Services Section -->
-    <section id="services" class="py-20 px-6 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold">Our AI Capabilities</h2>
-            <p class="text-slate-400 mt-2">End-to-end artificial intelligence solutions built for enterprise scale.</p>
-        </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="glass p-8 rounded-2xl hover:border-indigo-500/50 transition">
-                <i data-lucide="bot" class="w-10 h-10 text-indigo-400 mb-6"></i>
-                <h3 class="text-xl font-semibold mb-3">Generative AI & LLMs</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Custom RAG architectures, secure internal search, autonomous agent workflows, and fine-tuned domain models.</p>
+        <!-- Hero -->
+        <section id="home" class="relative overflow-hidden px-4 pb-24 pt-36 sm:px-6 sm:pt-44">
+            <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
+                <div class="absolute left-1/2 top-32 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-indigo-600/15 blur-[110px] sm:h-[650px] sm:w-[650px]"></div>
+                <div class="absolute right-0 top-64 h-72 w-72 rounded-full bg-cyan-500/10 blur-[100px]"></div>
             </div>
-            <div class="glass p-8 rounded-2xl hover:border-indigo-500/50 transition">
-                <i data-lucide="database" class="w-10 h-10 text-cyan-400 mb-6"></i>
-                <h3 class="text-xl font-semibold mb-3">Data Engineering</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Modern data warehouse pipelines (GCP BigQuery, Azure Synapse, Fabric) structured for high-performance AI integration.</p>
-            </div>
-            <div class="glass p-8 rounded-2xl hover:border-indigo-500/50 transition">
-                <i data-lucide="line-chart" class="w-10 h-10 text-emerald-400 mb-6"></i>
-                <h3 class="text-xl font-semibold mb-3">Predictive Models</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Machine learning engines for demand forecasting, anomaly detection, customer churn, and risk analytics.</p>
-            </div>
-            <div class="glass p-8 rounded-2xl hover:border-indigo-500/50 transition">
-                <i data-lucide="shield-check" class="w-10 h-10 text-amber-400 mb-6"></i>
-                <h3 class="text-xl font-semibold mb-3">AI Strategy & Audit</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Enterprise roadmaps, vendor evaluations, security frameworks, and governance policies for responsible AI execution.</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Tech Stack -->
-    <section id="stack" class="py-16 border-y border-slate-800/60 bg-slate-900/30">
-        <div class="max-w-7xl mx-auto px-6 text-center">
-            <p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-8">Powered By Enterprise Platforms</p>
-            <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-70">
-                <span class="text-lg font-bold text-slate-300">OpenAI</span>
-                <span class="text-lg font-bold text-slate-300">Google Cloud</span>
-                <span class="text-lg font-bold text-slate-300">Microsoft Azure</span>
-                <span class="text-lg font-bold text-slate-300">Python</span>
-                <span class="text-lg font-bold text-slate-300">PyTorch</span>
-                <span class="text-lg font-bold text-slate-300">LangChain</span>
-            </div>
-        </div>
-    </section>
+            <div class="mx-auto max-w-7xl">
+                <div class="mx-auto max-w-5xl text-center">
 
-    <!-- Contact Form Section -->
-    <section id="contact" class="py-20 px-6 max-w-3xl mx-auto">
-        <div class="glass p-10 rounded-3xl glow">
-            <h2 class="text-3xl font-bold text-center mb-2">Build Your AI Advantage</h2>
-            <p class="text-slate-400 text-center text-sm mb-8">Contact our engineering team to discuss your project requirements.</p>
-            <form class="space-y-6" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
-                <div class="grid grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-xs font-medium text-slate-400 mb-2">First Name</label>
-                        <input type="text" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500">
+                    <div class="glass-subtle mb-8 inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-wider text-indigo-300">
+                        <i data-lucide="sparkles" class="h-4 w-4" aria-hidden="true"></i>
+                        Enterprise AI, Data & Analytics Consulting
                     </div>
-                    <div>
-                        <label class="block text-xs font-medium text-slate-400 mb-2">Work Email</label>
-                        <input type="email" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500">
+
+                    <h1 class="text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+                        Transform data into business value with
+                        <span class="gradient-text">enterprise AI and Microsoft Fabric</span>
+                    </h1>
+
+                    <p class="mx-auto mt-7 max-w-3xl text-base leading-8 text-slate-300 sm:text-lg md:text-xl">
+                        AIATBECS helps organizations modernize data platforms, implement Microsoft Fabric,
+                        deploy secure AI agents, and build enterprise analytics solutions designed for
+                        measurable and sustainable business outcomes.
+                    </p>
+
+                    <div class="mt-10 flex flex-col items-stretch justify-center gap-4 sm:flex-row sm:items-center">
+                        #contact
+                            Book a Discovery Call
+                            <i data-lucide="arrow-right" class="h-5 w-5" aria-hidden="true"></i>
+                        </a>
+
+                        #services
+                            Explore Our Services
+                        </a>
+                    </div>
+
+                    <div class="mt-14 grid gap-3 text-left sm:grid-cols-3">
+                        <div class="glass-subtle flex items-start gap-3 rounded-xl p-4">
+                            <i data-lucide="check-circle-2" class="mt-0.5 h-5 w-5 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                            <span class="text-sm text-slate-300">Strategy aligned with implementation</span>
+                        </div>
+
+                        <div class="glass-subtle flex items-start gap-3 rounded-xl p-4">
+                            <i data-lucide="check-circle-2" class="mt-0.5 h-5 w-5 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                            <span class="text-sm text-slate-300">Scalable enterprise architecture</span>
+                        </div>
+
+                        <div class="glass-subtle flex items-start gap-3 rounded-xl p-4">
+                            <i data-lucide="check-circle-2" class="mt-0.5 h-5 w-5 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                            <span class="text-sm text-slate-300">Production-focused delivery</span>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <label class="block text-xs font-medium text-slate-400 mb-2">Project Overview</label>
-                    <textarea rows="4" required placeholder="Tell us about your data or AI initiatives..." class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-indigo-500"></textarea>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="border-y border-slate-800/70 bg-slate-900/25 px-4 py-24 sm:px-6">
+            <div class="mx-auto max-w-7xl">
+                <div class="mx-auto mb-14 max-w-3xl text-center">
+                    <p class="section-label text-xs font-bold uppercase text-indigo-400">Consulting Services</p>
+                    <h2 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                        From strategy to production
+                    </h2>
+                    <p class="mt-4 text-base leading-7 text-slate-400 sm:text-lg">
+                        Advisory, architecture, modernization, and implementation services across enterprise
+                        data, analytics, AI, and the Microsoft ecosystem.
+                    </p>
                 </div>
-                <button type="submit" class="w-full py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl transition glow">
-                    Send Inquiry
-                </button>
-            </form>
-        </div>
-    </section>
+
+                <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+                    <article class="glass card-hover rounded-2xl p-7">
+                        <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500/10 ring-1 ring-indigo-400/20">
+                            <i data-lucide="compass" class="h-6 w-6 text-indigo-400" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white">AI Strategy & Roadmaps</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-400">
+                            Identify high-value AI opportunities, establish responsible AI guardrails,
+                            prioritize use cases, and define a practical implementation roadmap.
+                        </p>
+                    </article>
+
+                    <article class="glass card-hover rounded-2xl p-7">
+                        <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/10 ring-1 ring-cyan-400/20">
+                            <i data-lucide="layers-3" class="h-6 w-6 text-cyan-400" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white">Microsoft Fabric</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-400">
+                            Fabric architecture, migration planning, lakehouse and warehouse implementation,
+                            data pipelines, semantic models, governance, and analytics modernization.
+                        </p>
+                    </article>
+
+                    <article class="glass card-hover rounded-2xl p-7">
+                        <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-violet-500/10 ring-1 ring-violet-400/20">
+                            <i data-lucide="search-code" class="h-6 w-6 text-violet-400" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white">Enterprise RAG</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-400">
+                            Secure knowledge assistants, enterprise search, grounding strategies, and
+                            retrieval-augmented generation across structured and unstructured information.
+                        </p>
+                    </article>
+
+                    <article class="glass card-hover rounded-2xl p-7">
+                        <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 ring-1 ring-emerald-400/20">
+                            <i data-lucide="database-zap" class="h-6 w-6 text-emerald-400" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white">Data Modernization</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-400">
+                            Modernize legacy warehouses, reporting estates, ETL processes, and data platforms
+                            using governed cloud and lakehouse architectures.
+                        </p>
+                    </article>
+
+                    <article class="glass card-hover rounded-2xl p-7">
+                        <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/10 ring-1 ring-amber-400/20">
+                            <i data-lucide="bot" class="h-6 w-6 text-amber-400" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white">AI Agents & Automation</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-400">
+                            Design intelligent agents and assisted workflows that improve access to knowledge,
+                            streamline decisions, and reduce repetitive operational work.
+                        </p>
+                    </article>
+
+                    <article class="glass card-hover rounded-2xl p-7">
+                        <div class="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-sky-500/10 ring-1 ring-sky-400/20">
+                            <i data-lucide="users-round" class="h-6 w-6 text-sky-400" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white">Copilot Enablement</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-400">
+                            Readiness assessments, governance planning, adoption strategies, use-case design,
+                            and implementation support for enterprise Copilot initiatives.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why AIATBECS -->
+        <section id="why-us" class="px-4 py-24 sm:px-6">
+            <div class="mx-auto max-w-7xl">
+                <div class="grid items-start gap-14 lg:grid-cols-[0.85fr_1.15fr]">
+
+                    <div class="lg:sticky lg:top-28">
+                        <p class="section-label text-xs font-bold uppercase text-indigo-400">Why AIATBECS</p>
+
+                        <h2 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                            Practical consulting for complex enterprise transformation
+                        </h2>
+
+                        <p class="mt-5 text-base leading-8 text-slate-400">
+                            AIATBECS brings business alignment, solution architecture, and implementation
+                            discipline together to help organizations move confidently from exploration
+                            to production.
+                        </p>
+
+                        #contact
+                            Discuss your modernization priorities
+                            <i data-lucide="arrow-up-right" class="h-5 w-5" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="grid gap-5 sm:grid-cols-2">
+                        <article class="glass-subtle rounded-2xl p-7">
+                            <i data-lucide="badge-check" class="h-8 w-8 text-indigo-400" aria-hidden="true"></i>
+                            <h3 class="mt-5 text-lg font-semibold text-white">Microsoft Ecosystem Expertise</h3>
+                            <p class="mt-3 text-sm leading-7 text-slate-400">
+                                Solutions spanning Microsoft Fabric, Power BI, Azure data services, Copilot,
+                                analytics, and enterprise data platforms.
+                            </p>
+                        </article>
+
+                        <article class="glass-subtle rounded-2xl p-7">
+                            <i data-lucide="boxes" class="h-8 w-8 text-cyan-400" aria-hidden="true"></i>
+                            <h3 class="mt-5 text-lg font-semibold text-white">Enterprise Architecture</h3>
+                            <p class="mt-3 text-sm leading-7 text-slate-400">
+                                Architectures designed around scalability, integration, governance,
+                                security, maintainability, and operational readiness.
+                            </p>
+                        </article>
+
+                        <article class="glass-subtle rounded-2xl p-7">
+                            <i data-lucide="rocket" class="h-8 w-8 text-emerald-400" aria-hidden="true"></i>
+                            <h3 class="mt-5 text-lg font-semibold text-white">Production-Ready Delivery</h3>
+                            <p class="mt-3 text-sm leading-7 text-slate-400">
+                                Clear requirements, implementation planning, validation, documentation,
+                                knowledge transfer, and support transition.
+                            </p>
+                        </article>
+
+                        <article class="glass-subtle rounded-2xl p-7">
+                            <i data-lucide="handshake" class="h-8 w-8 text-amber-400" aria-hidden="true"></i>
+                            <h3 class="mt-5 text-lg font-semibold text-white">Trusted Advisor Approach</h3>
+                            <p class="mt-3 text-sm leading-7 text-slate-400">
+                                Collaborative guidance focused on realistic scope, transparent dependencies,
+                                stakeholder alignment, and measurable business outcomes.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Representative Engagements -->
+        <section id="engagements" class="border-y border-slate-800/70 bg-slate-900/25 px-4 py-24 sm:px-6">
+            <div class="mx-auto max-w-7xl">
+                <div class="mx-auto mb-14 max-w-3xl text-center">
+                    <p class="section-label text-xs font-bold uppercase text-indigo-400">Representative Engagements</p>
+                    <h2 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                        Modernization challenges we help solve
+                    </h2>
+                    <p class="mt-4 text-base leading-7 text-slate-400 sm:text-lg">
+                        Representative solution areas that demonstrate how AIATBECS can support enterprise
+                        data, analytics, and AI transformation.
+                    </p>
+                </div>
+
+                <div class="grid gap-6 md:grid-cols-2">
+
+                    <article class="glass card-hover overflow-hidden rounded-2xl">
+                        <div class="p-7 sm:p-8">
+                            <div class="flex items-start justify-between gap-4">
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-wider text-cyan-400">
+                                        Analytics Modernization
+                                    </p>
+                                    <h3 class="mt-3 text-2xl font-semibold text-white">
+                                        SSRS to Power BI Modernization
+                                    </h3>
+                                </div>
+                                <i data-lucide="bar-chart-3" class="h-8 w-8 shrink-0 text-cyan-400" aria-hidden="true"></i>
+                            </div>
+
+                            <p class="mt-5 text-sm leading-7 text-slate-400">
+                                Assess legacy reporting estates, rationalize report inventories, define
+                                migration waves, and establish governed Power BI delivery and adoption models.
+                            </p>
+
+                            <ul class="mt-6 space-y-3 text-sm text-slate-300">
+                                <li class="flex gap-3">
+                                    <i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                                    Report inventory and complexity assessment
+                                </li>
+                                <li class="flex gap-3">
+                                    <i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                                    Migration wave and dependency planning
+                                </li>
+                                <li class="flex gap-3">
+                                    <i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                                    Power BI governance and validation
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="glass card-hover overflow-hidden rounded-2xl">
+                        <div class="p-7 sm:p-8">
+                            <div class="flex items-start justify-between gap-4">
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-wider text-indigo-400">
+                                        Unified Analytics
+                                    </p>
+                                    <h3 class="mt-3 text-2xl font-semibold text-white">
+                                        Microsoft Fabric Implementation
+                                    </h3>
+                                </div>
+                                <i data-lucide="layers-3" class="h-8 w-8 shrink-0 text-indigo-400" aria-hidden="true"></i>
+                            </div>
+
+                            <p class="mt-5 text-sm leading-7 text-slate-400">
+                                Define Fabric environments and implement scalable ingestion, lakehouse,
+                                warehouse, semantic model, governance, and deployment patterns.
+                            </p>
+
+                            <ul class="mt-6 space-y-3 text-sm text-slate-300">
+                                <li class="flex gap-3">
+                                    <i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                                    Workspace and environment architecture
+                                </li>
+                                <li class="flex gap-3">
+                                    <i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                                    Lakehouse, warehouse, and pipeline design
+                                </li>
+                                <li class="flex gap-3">
+                                    <i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                                    Deployment, governance, and operations
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="glass card-hover overflow-hidden rounded-2xl">
+                        <div class="p-7 sm:p-8">
+                            <div class="flex items-start justify-between gap-4">
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-wider text-emerald-400">
+                                        Data Platform Transformation
+                                    </p>
+                                    <h3 class="mt-3 text-2xl font-semibold text-white">
+                                        Data Modernization Programs
+                                    </h3>
+                                </div>
+                                <i data-lucide="database-zap" class="h-8 w-8 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                            </div>
+
+                            <p class="mt-5 text-sm leading-7 text-slate-400">
+                                Modernize legacy data warehouses, ETL workloads, and fragmented analytics
+                                platforms using governed cloud data architecture.
+                            </p>
+
+                            <ul class="mt-6 space-y-3 text-sm text-slate-300">
+                                <li class="flex gap-3">
+                                    <i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                                    Source and dependency assessment
+                                </li>
+                                <li class="flex gap-3">
+                                    <i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                                    Metadata-driven ingestion patterns
+                                </li>
+                                <li class="flex gap-3">
+                                    <i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                                    Migration sequencing and validation
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="glass card-hover overflow-hidden rounded-2xl">
+                        <div class="p-7 sm:p-8">
+                            <div class="flex items-start justify-between gap-4">
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-wider text-amber-400">
+                                        Intelligent Automation
+                                    </p>
+                                    <h3 class="mt-3 text-2xl font-semibold text-white">
+                                        Enterprise AI Agent Solutions
+                                    </h3>
+                                </div>
+                                <i data-lucide="bot" class="h-8 w-8 shrink-0 text-amber-400" aria-hidden="true"></i>
+                            </div>
+
+                            <p class="mt-5 text-sm leading-7 text-slate-400">
+                                Design grounded AI assistants and agent workflows that help professionals
+                                retrieve information, analyze business data, and complete repeatable tasks.
+                            </p>
+
+                            <ul class="mt-6 space-y-3 text-sm text-slate-300">
+                                <li class="flex gap-3">
+                                    <i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                                    Use-case and knowledge-source assessment
+                                </li>
+                                <li class="flex gap-3">
+                                    <i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                                    Grounding, access, and response design
+                                </li>
+                                <li class="flex gap-3">
+                                    <i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-400" aria-hidden="true"></i>
+                                    Validation and adoption planning
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="mt-8 text-center text-xs leading-6 text-slate-500">
+                    Representative engagement descriptions are illustrative and do not identify specific clients.
+                </p>
+            </div>
+        </section>
+
+        <!-- Approach -->
+        <section id="approach" class="px-4 py-24 sm:px-6">
+            <div class="mx-auto max-w-7xl">
+                <div class="mx-auto mb-14 max-w-3xl text-center">
+                    <p class="section-label text-xs font-bold uppercase text-indigo-400">Our Approach</p>
+                    <h2 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                        A clear path from opportunity to adoption
+                    </h2>
+                </div>
+
+                <ol class="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+                    <li class="glass-subtle rounded-2xl p-7">
+                        <span class="text-sm font-bold text-indigo-400">01</span>
+                        <h3 class="mt-4 text-xl font-semibold text-white">Discover</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-400">
+                            Clarify business outcomes, users, data sources, constraints, dependencies, and priorities.
+                        </p>
+                    </li>
+
+                    <li class="glass-subtle rounded-2xl p-7">
+                        <span class="text-sm font-bold text-cyan-400">02</span>
+                        <h3 class="mt-4 text-xl font-semibold text-white">Architect</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-400">
+                            Define the target architecture, integration model, governance controls, and delivery roadmap.
+                        </p>
+                    </li>
+
+                    <li class="glass-subtle rounded-2xl p-7">
+                        <span class="text-sm font-bold text-emerald-400">03</span>
+                        <h3 class="mt-4 text-xl font-semibold text-white">Implement</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-400">
+                            Build iteratively with traceable requirements, technical validation, and stakeholder checkpoints.
+                        </p>
+                    </li>
+
+                    <li class="glass-subtle rounded-2xl p-7">
+                        <span class="text-sm font-bold text-amber-400">04</span>
+                        <h3 class="mt-4 text-xl font-semibold text-white">Operationalize</h3>
+                        <p class="mt-3 text-sm leading-7 text-slate-400">
+                            Prepare documentation, knowledge transfer, adoption, support transition, and improvement plans.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Technology -->
+        <section id="technology" class="border-y border-slate-800/70 bg-slate-900/30 px-4 py-16 sm:px-6">
+            <div class="mx-auto max-w-7xl text-center">
+                <p class="section-label text-xs font-bold uppercase text-slate-500">
+                    Enterprise Technology Focus
+                </p>
+
+                <div class="mt-9 flex flex-wrap items-center justify-center gap-3">
+                    <span class="rounded-full border border-slate-700 bg-slate-900 px-5 py-2.5 text-sm font-semibold text-slate-200">Microsoft Fabric</span>
+                    <span class="rounded-full border border-slate-700 bg-slate-900 px-5 py-2.5 text-sm font-semibold text-slate-200">Power BI</span>
+                    <span class="rounded-full border border-slate-700 bg-slate-900 px-5 py-2.5 text-sm font-semibold text-slate-200">Microsoft Azure</span>
+                    <span class="rounded-full border border-slate-700 bg-slate-900 px-5 py-2.5 text-sm font-semibold text-slate-200">Microsoft Copilot</span>
+                    <span class="rounded-full border border-slate-700 bg-slate-900 px-5 py-2.5 text-sm font-semibold text-slate-200">Azure OpenAI</span>
+                    <span class="rounded-full border border-slate-700 bg-slate-900 px-5 py-2.5 text-sm font-semibold text-slate-200">OneLake</span>
+                    <span class="rounded-full border border-slate-700 bg-slate-900 px-5 py-2.5 text-sm font-semibold text-slate-200">Python & PySpark</span>
+                    <span class="rounded-full border border-slate-700 bg-slate-900 px-5 py-2.5 text-sm font-semibold text-slate-200">SQL</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="px-4 py-24 sm:px-6">
+            <div class="mx-auto max-w-7xl">
+                <div class="glass overflow-hidden rounded-3xl">
+                    <div class="grid lg:grid-cols-[1.15fr_0.85fr]">
+                        <div class="p-7 sm:p-10 lg:p-14">
+                            <p class="section-label text-xs font-bold uppercase text-indigo-400">About AIATBECS</p>
+
+                            <h2 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                                Boutique expertise with an enterprise mindset
+                            </h2>
+
+                            <p class="mt-6 text-base leading-8 text-slate-300">
+                                AIATBECS is a boutique consulting firm focused on enterprise AI,
+                                Microsoft Fabric, analytics modernization, data engineering, and
+                                intelligent automation.
+                            </p>
+
+                            <p class="mt-4 text-base leading-8 text-slate-400">
+                                We help organizations translate emerging technologies into practical
+                                business outcomes through advisory services, architecture, implementation
+                                planning, technical delivery, and modernization programs.
+                            </p>
+                        </div>
+
+                        <div class="border-t border-slate-800 bg-indigo-500/5 p-7 sm:p-10 lg:border-l lg:border-t-0 lg:p-14">
+                            <h3 class="text-xl font-semibold text-white">What clients can expect</h3>
+
+                            <ul class="mt-7 space-y-5">
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="circle-check-big" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i>
+                                    <span class="text-sm leading-6 text-slate-300">Clear scope, assumptions, and dependencies</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="circle-check-big" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i>
+                                    <span class="text-sm leading-6 text-slate-300">Architecture grounded in business priorities</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="circle-check-big" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i>
+                                    <span class="text-sm leading-6 text-slate-300">Transparent status and risk communication</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="circle-check-big" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i>
+                                    <span class="text-sm leading-6 text-slate-300">Documentation and knowledge transfer</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="px-4 pb-24 sm:px-6">
+            <div class="mx-auto max-w-6xl">
+                <div class="grid overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/70 shadow-2xl shadow-indigo-950/20 lg:grid-cols-[0.85fr_1.15fr]">
+
+                    <div class="bg-gradient-to-br from-indigo-600/25 via-slate-900 to-cyan-600/10 p-7 sm:p-10 lg:p-12">
+                        <p class="section-label text-xs font-bold uppercase text-indigo-300">Start a Conversation</p>
+
+                        <h2 class="mt-4 text-3xl font-bold tracking-tight text-white">
+                            Discuss your AI or data modernization priorities
+                        </h2>
+
+                        <p class="mt-5 text-sm leading-7 text-slate-300">
+                            Share a short overview of your goals, current environment, and key challenges.
+                            The form will prepare an email in your default email application.
+                        </p>
+
+                        <div class="mt-8 space-y-5">
+                            <div class="flex items-start gap-4">
+                                <i data-lucide="message-square-text" class="mt-1 h-5 w-5 shrink-0 text-indigo-300" aria-hidden="true"></i>
+                                <div>
+                                    <h3 class="font-semibold text-white">Initial discovery</h3>
+                                    <p class="mt-1 text-sm leading-6 text-slate-400">
+                                        Align on business objectives, technology context, and desired outcomes.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <i data-lucide="map" class="mt-1 h-5 w-5 shrink-0 text-indigo-300" aria-hidden="true"></i>
+                                <div>
+                                    <h3 class="font-semibold text-white">Practical next steps</h3>
+                                    <p class="mt-1 text-sm leading-6 text-slate-400">
+                                        Identify the right assessment, workshop, architecture, or implementation path.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-7 sm:p-10 lg:p-12">
+                        <form id="contact-form" novalidate>
+                            <div class="grid gap-6 sm:grid-cols-2">
+                                <div>
+                                    <label for="name" class="mb-2 block text-sm font-medium text-slate-200">
+                                        Name <span class="text-rose-400" aria-hidden="true">*</span>
+                                    </label>
+
+                                    <input
+                                        id="name"
+                                        name="name"
+                                        type="text"
+                                        autocomplete="name"
+                                        required
+                                        minlength="2"
+                                        aria-describedby="name-error"
+                                        class="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-base text-white placeholder:text-slate-600 hover:border-slate-600 focus:border-indigo-400"
+                                    >
+
+                                    <p id="name-error" class="mt-2 hidden text-sm text-rose-400"></p>
+                                </div>
+
+                                <div>
+                                    <label for="email" class="mb-2 block text-sm font-medium text-slate-200">
+                                        Work email <span class="text-rose-400" aria-hidden="true">*</span>
+                                    </label>
+
+                                    <input
+                                        id="email"
+                                        name="email"
+                                        type="email"
+                                        inputmode="email"
+                                        autocomplete="email"
+                                        required
+                                        aria-describedby="email-error"
+                                        class="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-base text-white placeholder:text-slate-600 hover:border-slate-600 focus:border-indigo-400"
+                                    >
+
+                                    <p id="email-error" class="mt-2 hidden text-sm text-rose-400"></p>
+                                </div>
+                            </div>
+
+                            <div class="mt-6">
+                                <label for="company" class="mb-2 block text-sm font-medium text-slate-200">
+                                    Organization
+                                </label>
+
+                                <input
+                                    id="company"
+                                    name="company"
+                                    type="text"
+                                    autocomplete="organization"
+                                    class="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-base text-white placeholder:text-slate-600 hover:border-slate-600 focus:border-indigo-400"
+                                >
+                            </div>
+
+                            <div class="mt-6">
+                                <label for="service" class="mb-2 block text-sm font-medium text-slate-200">
+                                    Area of interest
+                                </label>
+
+                                <select
+                                    id="service"
+                                    name="service"
+                                    class="w-full rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-base text-white hover:border-slate-600 focus:border-indigo-400"
+                                >
+                                    <option value="General consultation">General consultation</option>
+                                    <option value="AI strategy and roadmap">AI strategy and roadmap</option>
+                                    <option value="Microsoft Fabric">Microsoft Fabric</option>
+                                    <option value="Enterprise RAG">Enterprise RAG</option>
+                                    <option value="Data modernization">Data modernization</option>
+                                    <option value="AI agents and automation">AI agents and automation</option>
+                                    <option value="Copilot enablement">Copilot enablement</option>
+                                    <option value="Power BI modernization">Power BI modernization</option>
+                                </select>
+                            </div>
+
+                            <div class="mt-6">
+                                <label for="message" class="mb-2 block text-sm font-medium text-slate-200">
+                                    Project overview <span class="text-rose-400" aria-hidden="true">*</span>
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    rows="6"
+                                    required
+                                    minlength="20"
+                                    maxlength="2000"
+                                    aria-describedby="message-help message-error"
+                                    placeholder="Tell us about your current environment, goals, challenges, and desired outcomes."
+                                    class="w-full resize-y rounded-xl border border-slate-700 bg-slate-950 px-4 py-3 text-base text-white placeholder:text-slate-600 hover:border-slate-600 focus:border-indigo-400"
+                                ></textarea>
+
+                                <div class="mt-2 flex items-start justify-between gap-4">
+                                    <p id="message-help" class="text-xs leading-5 text-slate-500">
+                                        Please do not include confidential, sensitive, or regulated information.
+                                    </p>
+                                    <span id="character-count" class="shrink-0 text-xs text-slate-500">0 / 2000</span>
+                                </div>
+
+                                <p id="message-error" class="mt-2 hidden text-sm text-rose-400"></p>
+                            </div>
+
+                            <div class="mt-6">
+                                <label class="flex cursor-pointer items-start gap-3">
+                                    <input
+                                        id="consent"
+                                        name="consent"
+                                        type="checkbox"
+                                        required
+                                        aria-describedby="consent-error"
+                                        class="mt-1 h-4 w-4 rounded border-slate-600 bg-slate-950 text-indigo-600"
+                                    >
+
+                                    <span class="text-sm leading-6 text-slate-400">
+                                        I agree that AIATBECS may use the information provided to respond to this inquiry.
+                                        <span class="text-rose-400" aria-hidden="true">*</span>
+                                    </span>
+                                </label>
+
+                                <p id="consent-error" class="mt-2 hidden text-sm text-rose-400"></p>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="glow mt-8 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-indigo-600 px-6 py-3.5 font-semibold text-white transition hover:bg-indigo-500 disabled:cursor-not-allowed disabled:opacity-60"
+                            >
+                                Prepare Email Inquiry
+                                <i data-lucide="send" class="h-5 w-5" aria-hidden="true"></i>
+                            </button>
+
+                            <div
+                                id="form-status"
+                                class="mt-5 hidden rounded-xl border px-4 py-3 text-sm leading-6"
+                                role="status"
+                                aria-live="polite"
+                                tabindex="-1"
+                            ></div>
+
+                            <p class="mt-4 text-center text-xs leading-5 text-slate-500">
+                                This static website opens your email application. It does not store or transmit
+                                form information through the website.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="py-10 border-t border-slate-800/80 text-center text-slate-500 text-xs">
-        <p>© 2026 AI Edge. All rights reserved.</p>
-        <p class="mt-2 text-slate-600">AI Edge is a trade name of BigEdge Consulting Services Limited (BC Corporation Number: A0130365).</p>
+    <footer class="border-t border-slate-800/80 bg-slate-950 px-4 py-10 sm:px-6">
+        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 text-center md:flex-row md:text-left">
+            <div>
+                <p class="font-semibold text-slate-200">AIATBECS</p>
+                <p class="mt-1 text-sm text-slate-500">
+                    Enterprise AI, Microsoft Fabric & Data Modernization Consulting
+                </p>
+            </div>
+
+            <div class="text-sm text-slate-500 md:text-right">
+                <p>© <span id="current-year">2026</span> AIATBECS. All rights reserved.</p>
+                <p class="mt-1">
+                    A trade name of BigEdge Consulting Services Limited.
+                </p>
+            </div>
+        </div>
     </footer>
 
     <script>
+        /*
+         * IMPORTANT:
+         * Replace the email address below with a verified AIATBECS mailbox.
+         * Since GitHub Pages is static hosting, this form opens the visitor's
+         * default email application instead of submitting to a server.
+         */
+        const CONTACT_EMAIL = "sthakre@aiatbecs.ca";
+
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const mobileLinks = document.querySelectorAll(".mobile-link");
+
+        function closeMobileMenu() {
+            mobileMenu.classList.add("hidden");
+            mobileMenuButton.setAttribute("aria-expanded", "false");
+            mobileMenuButton.setAttribute("aria-label", "Open navigation menu");
+            mobileMenuButton.innerHTML =
+                '<i data-lucide="menu" class="h-6 w-6" aria-hidden="true"></i>';
+            lucide.createIcons();
+        }
+
+        mobileMenuButton.addEventListener("click", function () {
+            const isExpanded =
+                mobileMenuButton.getAttribute("aria-expanded") === "true";
+
+            if (isExpanded) {
+                closeMobileMenu();
+            } else {
+                mobileMenu.classList.remove("hidden");
+                mobileMenuButton.setAttribute("aria-expanded", "true");
+                mobileMenuButton.setAttribute("aria-label", "Close navigation menu");
+                mobileMenuButton.innerHTML =
+                    '<i data-lucide="x" class="h-6 w-6" aria-hidden="true"></i>';
+                lucide.createIcons();
+            }
+        });
+
+        mobileLinks.forEach(function (link) {
+            link.addEventListener("click", closeMobileMenu);
+        });
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+                closeMobileMenu();
+            }
+        });
+
+        const contactForm = document.getElementById("contact-form");
+        const formStatus = document.getElementById("form-status");
+        const messageField = document.getElementById("message");
+        const characterCount = document.getElementById("character-count");
+
+        messageField.addEventListener("input", function () {
+            characterCount.textContent =
+                messageField.value.length + " / " + messageField.maxLength;
+        });
+
+        function showFieldError(fieldId, message) {
+            const field = document.getElementById(fieldId);
+            const error = document.getElementById(fieldId + "-error");
+
+            if (message) {
+                field.setAttribute("aria-invalid", "true");
+                error.textContent = message;
+                error.classList.remove("hidden");
+            } else {
+                field.removeAttribute("aria-invalid");
+                error.textContent = "";
+                error.classList.add("hidden");
+            }
+        }
+
+        function validateContactForm() {
+            const name = document.getElementById("name");
+            const email = document.getElementById("email");
+            const message = document.getElementById("message");
+            const consent = document.getElementById("consent");
+
+            let firstInvalidField = null;
+
+            showFieldError("name", "");
+            showFieldError("email", "");
+            showFieldError("message", "");
+            showFieldError("consent", "");
+
+            if (name.value.trim().length < 2) {
+                showFieldError("name", "Please enter your name.");
+                firstInvalidField = firstInvalidField || name;
+            }
+
+            if (!email.validity.valid) {
+                showFieldError("email", "Please enter a valid email address.");
+                firstInvalidField = firstInvalidField || email;
+            }
+
+            if (message.value.trim().length < 20) {
+                showFieldError(
+                    "message",
+                    "Please provide at least 20 characters describing your inquiry."
+                );
+                firstInvalidField = firstInvalidField || message;
+            }
+
+            if (!consent.checked) {
+                showFieldError(
+                    "consent",
+                    "Please provide consent so AIATBECS can respond to your inquiry."
+                );
+                firstInvalidField = firstInvalidField || consent;
+            }
+
+            if (firstInvalidField) {
+                firstInvalidField.focus();
+                return false;
+            }
+
+            return true;
+        }
+
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            formStatus.classList.add("hidden");
+
+            if (!validateContactForm()) {
+                return;
+            }
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const company = document.getElementById("company").value.trim();
+            const service = document.getElementById("service").value;
+            const message = document.getElementById("message").value.trim();
+
+            const subject = "AIATBECS inquiry: " + service;
+
+            const emailBody = [
+                "Hello AIATBECS,",
+                "",
+                "I would like to discuss the following consulting requirement.",
+                "",
+                "Name: " + name,
+                "Work email: " + email,
+                "Organization: " + (company || "Not provided"),
+                "Area of interest: " + service,
+                "",
+                "Project overview:",
+                message,
+                "",
+                "Regards,",
+                name
+            ].join("\n");
+
+            const mailtoUrl =
+                "mailto:" +
+                encodeURIComponent(CONTACT_EMAIL) +
+                "?subject=" +
+                encodeURIComponent(subject) +
+                "&body=" +
+                encodeURIComponent(emailBody);
+
+            formStatus.className =
+                "mt-5 rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-4 py-3 text-sm leading-6 text-emerald-200";
+
+            formStatus.textContent =
+                "Your email application should open with the inquiry prepared. Review the message and send it from your email application.";
+
+            formStatus.classList.remove("hidden");
+            formStatus.focus();
+
+            window.location.href = mailtoUrl;
+        });
+
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+
         lucide.createIcons();
     </script>
 </body>

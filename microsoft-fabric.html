@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microsoft Fabric | AIATBECS</title>
+  <meta name="description" content="Microsoft Fabric strategy and implementation consulting for modern enterprise analytics and data platforms." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+  <a href="#main-content" class="skip-link focus-ring rounded-xl border border-slate-700 bg-slate-900 px-4 py-2 text-sm font-medium text-white">Skip to main content</a>
+
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-xl">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6">
+      <a href="index.html" class="flex items-center gap-3" aria-label="AIATBECS home">
+        <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-500/10 ring-1 ring-indigo-400/30"><i data-lucide="network" class="h-6 w-6 text-indigo-400" aria-hidden="true"></i></span>
+        <span><span class="block text-lg font-bold tracking-tight text-white">AI@BECS</span><span class="hidden text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-500 sm:block">AI, Analytics & Enterprise Consulting</span></span>
+      </a>
+      <nav class="hidden items-center gap-7 text-sm font-medium text-slate-300 lg:flex" aria-label="Primary navigation">
+        <a href="services.html" class="transition hover:text-white">Services</a>
+        <a href="industries.html" class="transition hover:text-white">Industries</a>
+        <a href="engagements.html" class="transition hover:text-white">Engagements</a>
+        <a href="insights.html" class="transition hover:text-white">Insights</a>
+        <a href="about.html" class="transition hover:text-white">About</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="contact.html" class="hidden rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-500 sm:inline-flex">Book a Discovery Call</a>
+        <button id="mobile-menu-button" type="button" class="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-700 bg-slate-900 text-slate-200 hover:border-indigo-400 hover:text-white lg:hidden" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false"><i data-lucide="menu" class="h-6 w-6" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="hidden border-t border-slate-800 bg-slate-950 px-4 py-5 lg:hidden" aria-label="Mobile navigation">
+      <div class="mx-auto flex max-w-7xl flex-col gap-2">
+        <a href="services.html" class="mobile-link rounded-lg px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-900 hover:text-white">Services</a>
+        <a href="industries.html" class="mobile-link rounded-lg px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-900 hover:text-white">Industries</a>
+        <a href="engagements.html" class="mobile-link rounded-lg px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-900 hover:text-white">Engagements</a>
+        <a href="insights.html" class="mobile-link rounded-lg px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-900 hover:text-white">Insights</a>
+        <a href="about.html" class="mobile-link rounded-lg px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-900 hover:text-white">About</a>
+        <a href="contact.html" class="mobile-link mt-2 inline-flex items-center justify-center rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-500">Book a Discovery Call</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="page-shell">
+    <section class="page-hero px-4 sm:px-6">
+      <div class="mx-auto max-w-7xl">
+        <div class="glass rounded-3xl p-8 sm:p-12">
+          <p class="section-label text-xs font-bold uppercase text-indigo-400">Microsoft Fabric</p>
+          <h1 class="mt-4 max-w-3xl text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Modern analytics foundations built for enterprise adoption</h1>
+          <p class="mt-5 max-w-3xl text-lg leading-8 text-slate-300">We help organizations define the right Fabric roadmap, governance patterns, and delivery model to support analytics modernization without creating unnecessary operational overhead.</p>
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+            <a href="contact.html" class="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-6 py-3.5 font-semibold text-white transition hover:bg-indigo-500">Book a Discovery Call</a>
+            <a href="services.html" class="inline-flex items-center justify-center rounded-xl border border-slate-700 bg-slate-900 px-6 py-3.5 font-semibold text-slate-200 transition hover:border-indigo-400 hover:text-white">Back to services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+        <div class="glass page-card">
+          <div class="page-card-inner">
+            <h2 class="text-2xl font-semibold text-white">What we deliver</h2>
+            <ul class="content-list mt-6">
+              <li><i data-lucide="circle-check-big" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Target-state architecture and workspace strategy</span></li>
+              <li><i data-lucide="circle-check-big" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Data estate assessment and modernization sequencing</span></li>
+              <li><i data-lucide="circle-check-big" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Governance, security, and platform operating model design</span></li>
+              <li><i data-lucide="circle-check-big" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Adoption planning and value tracking for business stakeholders</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="glass page-card">
+          <div class="page-card-inner">
+            <h2 class="text-2xl font-semibold text-white">Common starting points</h2>
+            <ul class="content-list mt-6">
+              <li><i data-lucide="arrow-right" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Legacy reporting estate modernization</span></li>
+              <li><i data-lucide="arrow-right" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Data lakehouse platform design</span></li>
+              <li><i data-lucide="arrow-right" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Enterprise BI and semantic model clarity</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800/80 bg-slate-950 px-4 py-10 sm:px-6">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 text-center md:flex-row md:text-left">
+      <div>
+        <p class="font-semibold text-slate-200">AI@BECS</p>
+        <p class="mt-1 text-sm text-slate-500">Enterprise AI, Microsoft Fabric & Data Modernization Consulting</p>
+      </div>
+      <div class="text-sm text-slate-500 md:text-right">
+        <p>© <span id="current-year">2026</span> AIATBECS. All rights reserved.</p>
+        <p class="mt-1">A trade name of BigEdge Consulting Services Limited.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

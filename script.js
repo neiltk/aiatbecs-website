@@ -116,7 +116,7 @@ function validateContactForm() {
   }
 
   if (!consent.checked) {
-    showFieldError('consent', 'Please provide consent so AIATBECS can respond to your inquiry.');
+    showFieldError('consent', 'Please provide consent so AI Edge can respond to your inquiry.');
     firstInvalidField = firstInvalidField || consent;
   }
 
@@ -159,9 +159,9 @@ if (contactForm) {
     const service = document.getElementById('service') ? document.getElementById('service').value : 'General consultation';
     const message = document.getElementById('message').value.trim();
 
-    const subject = `AIATBECS inquiry: ${service}`;
+    const subject = `AI Edge inquiry: ${service}`;
     const emailBody = [
-      'Hello AIATBECS,',
+      'Hello AI Edge,',
       '',
       'I would like to discuss the following consulting requirement.',
       '',

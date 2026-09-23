@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SSRS to Power BI Migration | AI Edge</title>
+  <meta name="description" content="An AI Edge case study on assessing and preparing an enterprise SSRS estate for governed Power BI migration." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+  <a href="#main-content" class="skip-link focus-ring rounded-xl border border-slate-700 bg-slate-900 px-4 py-2 text-sm font-medium text-white">Skip to main content</a>
+
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-xl">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6">
+      <a href="index.html" class="flex items-center gap-3" aria-label="AI Edge home">
+        <img src="logo.svg" alt="" width="40" height="40" class="h-10 w-10" aria-hidden="true" />
+        <span><span class="block text-lg font-bold tracking-tight text-white">AI Edge</span></span>
+      </a>
+      <nav class="hidden items-center gap-7 text-sm font-medium text-slate-300 lg:flex" aria-label="Primary navigation">
+        <a href="services.html" class="transition hover:text-white">Services</a>
+        <a href="industries.html" class="transition hover:text-white">Industries</a>
+        <a href="engagements.html" class="transition hover:text-white">Engagements</a>
+        <a href="insights.html" class="transition hover:text-white">Insights</a>
+        <a href="about.html" class="transition hover:text-white">About</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="contact.html" class="hidden rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-500 sm:inline-flex">Book a Discovery Call</a>
+        <button id="mobile-menu-button" type="button" class="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-700 bg-slate-900 text-slate-200 hover:border-indigo-400 hover:text-white lg:hidden" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false"><i data-lucide="menu" class="h-6 w-6" aria-hidden="true"></i></button>
+      </div>
+    </div>
+    <nav id="mobile-menu" class="hidden border-t border-slate-800 bg-slate-950 px-4 py-5 lg:hidden" aria-label="Mobile navigation">
+      <div class="mx-auto flex max-w-7xl flex-col gap-2">
+        <a href="services.html" class="mobile-link rounded-lg px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-900 hover:text-white">Services</a>
+        <a href="industries.html" class="mobile-link rounded-lg px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-900 hover:text-white">Industries</a>
+        <a href="engagements.html" class="mobile-link rounded-lg px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-900 hover:text-white">Engagements</a>
+        <a href="insights.html" class="mobile-link rounded-lg px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-900 hover:text-white">Insights</a>
+        <a href="about.html" class="mobile-link rounded-lg px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-slate-900 hover:text-white">About</a>
+        <a href="contact.html" class="mobile-link mt-2 inline-flex items-center justify-center rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-500">Book a Discovery Call</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="page-shell">
+    <section class="page-hero px-4 sm:px-6">
+      <div class="mx-auto max-w-7xl">
+        <div class="glass rounded-3xl p-8 sm:p-12">
+          <p class="section-label text-xs font-bold uppercase text-cyan-400">Case Study | Analytics Modernization</p>
+          <h1 class="mt-4 max-w-4xl text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Preparing a large-scale SSRS estate for governed Power BI migration</h1>
+          <p class="mt-5 max-w-4xl text-lg leading-8 text-slate-300">How AI Edge helped an enterprise reporting team establish a repeatable migration process, uncover the real source technology behind legacy reports, and retire obsolete subscriptions and reports with controlled, reversible steps.</p>
+          <div class="mt-6 flex flex-wrap gap-3 text-xs font-semibold uppercase tracking-wider text-slate-400">
+            <span class="rounded-full border border-slate-700 bg-slate-900 px-3 py-2">SSRS to Power BI</span>
+            <span class="rounded-full border border-slate-700 bg-slate-900 px-3 py-2">Microsoft Fabric</span>
+            <span class="rounded-full border border-slate-700 bg-slate-900 px-3 py-2">Migration Factory</span>
+            <span class="rounded-full border border-slate-700 bg-slate-900 px-3 py-2">Reporting Governance</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-content">
+      <div class="grid gap-8 lg:grid-cols-[1.15fr_0.85fr]">
+        <div class="space-y-8">
+          <article class="glass page-card">
+            <div class="page-card-inner">
+              <p class="section-label text-xs font-bold uppercase text-indigo-400">Customer Challenge</p>
+              <h2 class="mt-3 text-2xl font-semibold text-white">Modernize a legacy reporting estate without losing operational control</h2>
+              <p class="mt-4 text-base leading-8 text-slate-300">The customer had a substantial SSRS estate with reports, shared and embedded data sources, scheduled subscriptions, and multiple migration readiness states. The team needed a reliable way to understand what each report actually used before moving workloads into Power BI and Microsoft Fabric.</p>
+              <p class="mt-4 text-base leading-8 text-slate-400">A key discovery issue was that report names and connection names did not always reveal the underlying technology. A source could be named like an enterprise data warehouse while the RDL definition identified SQL Server, or a report could depend on a shared source that was invisible to a simple embedded-source review.</p>
+            </div>
+          </article>
+
+          <article class="glass page-card">
+            <div class="page-card-inner">
+              <p class="section-label text-xs font-bold uppercase text-indigo-400">Solution Delivered</p>
+              <h2 class="mt-3 text-2xl font-semibold text-white">A governed assessment and migration playbook</h2>
+              <p class="mt-4 text-base leading-8 text-slate-300">AI Edge structured the work as a repeatable seven-stage process: assess the SSRS estate, capture migration inputs, run the RDL migration toolkit, verify publication, configure the migration notebook, map approved gateway connections, and validate the resulting Power BI report.</p>
+              <div class="mt-7 grid gap-6 md:grid-cols-2">
+                <div><p class="text-sm font-semibold text-cyan-300">Ground-truth source discovery</p><p class="mt-3 text-sm leading-7 text-slate-400">SQL and XML-based discovery queries distinguished shared from embedded sources and read the actual RDL provider rather than relying on report naming.</p></div>
+                <div><p class="text-sm font-semibold text-cyan-300">Safe migration execution</p><p class="mt-3 text-sm leading-7 text-slate-400">Notebook controls supported simulation first, with explicit checks for workspace, report, provider, connection, and source replacement parameters before applying changes.</p></div>
+                <div><p class="text-sm font-semibold text-cyan-300">Subscription inventory</p><p class="mt-3 text-sm leading-7 text-slate-400">Inventory queries separated subscription definitions from execution history and identified standard versus data-driven subscriptions for redesign planning.</p></div>
+                <div><p class="text-sm font-semibold text-cyan-300">Reversible retirement</p><p class="mt-3 text-sm leading-7 text-slate-400">Preview, backup, guarded disablement, archive movement, validation, and rollback procedures reduced the risk of retiring legacy content.</p></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="glass page-card">
+            <div class="page-card-inner">
+              <p class="section-label text-xs font-bold uppercase text-indigo-400">Implementation Drivers</p>
+              <h2 class="mt-3 text-2xl font-semibold text-white">Evidence before scale</h2>
+              <ul class="content-list mt-6">
+                <li><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Start with a reference report to demonstrate the full migration path before expanding to the wider estate.</span></li>
+                <li><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Keep source-data remediation, access provisioning, RDL business-logic changes, and subscription recreation as explicit planning boundaries.</span></li>
+                <li><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Use gateway mapping as a controlled operational step, with administrator access and approved connection details confirmed before production migration.</span></li>
+                <li><i data-lucide="check" class="mt-0.5 h-5 w-5 shrink-0 text-indigo-400" aria-hidden="true"></i><span>Separate reports that are ready for owners from access issues and paused items so each wave has a clear next action.</span></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <aside class="space-y-8">
+          <div class="glass page-card">
+            <div class="page-card-inner">
+              <h2 class="text-xl font-semibold text-white">Transformation snapshot</h2>
+              <div class="mt-6 grid gap-4 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
+                <div class="glass-subtle rounded-xl p-5"><p class="text-3xl font-bold text-cyan-300">Automated</p><p class="mt-2 text-sm text-slate-400">Source discovery scripts</p></div>
+                <div class="glass-subtle rounded-xl p-5"><p class="text-3xl font-bold text-indigo-300">Controlled</p><p class="mt-2 text-sm text-slate-400">Migration execution</p></div>
+                <div class="glass-subtle rounded-xl p-5"><p class="text-3xl font-bold text-amber-300">Reversible</p><p class="mt-2 text-sm text-slate-400">Retirement procedures</p></div>
+              </div>
+              <p class="mt-5 text-sm leading-7 text-slate-500">The snapshot highlights the repeatable controls and automation patterns established for a high-volume reporting modernization program.</p>
+            </div>
+          </div>
+
+          <div class="glass page-card">
+            <div class="page-card-inner">
+              <h2 class="text-xl font-semibold text-white">Migration controls</h2>
+              <ul class="content-list mt-5">
+                <li><i data-lucide="search-check" class="mt-0.5 h-5 w-5 shrink-0 text-cyan-400" aria-hidden="true"></i><span>RDL-backed provider discovery</span></li>
+                <li><i data-lucide="shield-check" class="mt-0.5 h-5 w-5 shrink-0 text-cyan-400" aria-hidden="true"></i><span>Simulation before apply</span></li>
+                <li><i data-lucide="database-backup" class="mt-0.5 h-5 w-5 shrink-0 text-cyan-400" aria-hidden="true"></i><span>Definition and subscription backups</span></li>
+                <li><i data-lucide="rotate-ccw" class="mt-0.5 h-5 w-5 shrink-0 text-cyan-400" aria-hidden="true"></i><span>Rollback-aware retirement</span></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="mt-8 glass page-card">
+        <div class="page-card-inner">
+          <p class="section-label text-xs font-bold uppercase text-indigo-400">Business Value Delivered</p>
+          <h2 class="mt-3 text-2xl font-semibold text-white">A clearer path from legacy reporting to governed analytics</h2>
+          <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="glass-subtle rounded-xl p-5"><p class="font-semibold text-white">Better migration decisions</p><p class="mt-2 text-sm leading-6 text-slate-400">Source technology and dependency evidence reduced guesswork during wave planning.</p></div>
+            <div class="glass-subtle rounded-xl p-5"><p class="font-semibold text-white">Repeatable execution</p><p class="mt-2 text-sm leading-6 text-slate-400">A reference process connected discovery, migration, gateway mapping, and validation.</p></div>
+            <div class="glass-subtle rounded-xl p-5"><p class="font-semibold text-white">Controlled retirement</p><p class="mt-2 text-sm leading-6 text-slate-400">Subscription disablement and archive procedures were designed to be previewable and reversible.</p></div>
+            <div class="glass-subtle rounded-xl p-5"><p class="font-semibold text-white">Clearer ownership</p><p class="mt-2 text-sm leading-6 text-slate-400">Readiness categories gave report owners and platform teams a shared action list.</p></div>
+          </div>
+          <p class="mt-7 text-sm leading-7 text-slate-500">Customer and delivery-partner names are not disclosed. The case study describes the documented migration approach and assessment status; production outcomes, commercial figures, and customer quotations are intentionally not inferred.</p>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+        <a href="contact.html" class="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-6 py-3.5 font-semibold text-white transition hover:bg-indigo-500">Discuss a similar migration</a>
+        <a href="engagements.html" class="inline-flex items-center justify-center rounded-xl border border-slate-700 bg-slate-900 px-6 py-3.5 font-semibold text-slate-200 transition hover:border-indigo-400 hover:text-white">Back to engagements</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800/80 bg-slate-950 px-4 py-10 sm:px-6">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 text-center md:flex-row md:text-left">
+      <div><p class="font-semibold text-slate-200">AI Edge</p><p class="mt-1 text-sm text-slate-500">Enterprise AI, Microsoft Fabric & Data Modernization Consulting</p></div>
+      <div class="text-sm text-slate-500 md:text-right"><p>© <span id="current-year">2026</span> AI Edge. All rights reserved.</p><p class="mt-1">A trade name of BigEdge Consulting Services Limited.</p></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-const CONTACT_EMAIL = 'sthakre@aiatbecs.ca';
+const CONTACT_EMAIL = 'contact@aiatbecs.ca';
 
 const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
@@ -177,7 +177,7 @@ if (contactForm) {
       name,
     ].join('\n');
 
-    const mailtoUrl = `mailto=${encodeURIComponent(CONTACT_EMAIL)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+    const mailtoUrl = `mailto:${encodeURIComponent(CONTACT_EMAIL)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
 
     formStatus.className = 'mt-5 rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-4 py-3 text-sm leading-6 text-emerald-200';
     formStatus.textContent = 'Your email application should open with the inquiry prepared. Review the message and send it from your email application.';
